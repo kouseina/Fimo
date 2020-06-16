@@ -1,10 +1,36 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {View, Text, StatusBar} from 'react-native';
+import Illus from './../../assets/illustration/keluarga-bahagia.svg';
+import {TitleIntro, DescIntro, BtnBlue, BtnWhite} from './../../component';
 
 const WelcomeAuth = () => {
   return (
-    <View>
-      <Text>WelcomeAuth Page</Text>
+    <View style={{height: '100%'}}>
+      <View
+        style={{
+          backgroundColor: '#FFE8D2',
+          width: '100%',
+          alignItems: 'center',
+          height: '60%',
+        }}>
+        <View style={{position: 'absolute', bottom: 0}}>
+          <Illus />
+        </View>
+      </View>
+      <View
+        style={{
+          backgroundColor: '#fff',
+          height: '40%',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          paddingVertical: 20,
+          paddingHorizontal: 50,
+        }}
+      />
+      <TitleIntro />
+      <DescIntro />
+      <BtnBlue value="LOGIN" />
+      <BtnWhite value="DAFTAR" />
     </View>
   );
 };

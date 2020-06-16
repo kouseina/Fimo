@@ -16,15 +16,14 @@ import Router from './router';
 const App = () => {
   return (
     <NavigationContainer>
+      <StatusBar
+        translucent
+        backgroundColor="transparent"
+        barStyle="dark-content"
+      />
       <Router />
     </NavigationContainer>
   );
 };
-
-const styles = StyleSheet.create({
-  scrollView: {
-    backgroundColor: Colors.lighter,
-  },
-});
 
 export default App;
