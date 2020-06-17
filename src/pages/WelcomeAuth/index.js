@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Text, StatusBar} from 'react-native';
 import Illus from './../../assets/illustration/keluarga-bahagia.svg';
-import {TitleIntro, DescIntro, BtnBlue, BtnWhite} from './../../component';
+import {TitleIntro, DescIntro, BtnBlue, BtnWhite} from '../../component/atoms';
 
 const WelcomeAuth = () => {
   return (
@@ -25,12 +25,12 @@ const WelcomeAuth = () => {
           justifyContent: 'space-between',
           paddingVertical: 20,
           paddingHorizontal: 50,
-        }}
-      />
-      <TitleIntro />
-      <DescIntro />
-      <BtnBlue value="LOGIN" />
-      <BtnWhite value="DAFTAR" />
+        }}>
+        <TitleIntro />
+        <DescIntro />
+        <BtnBlue value="LOGIN" />
+        <BtnWhite value="DAFTAR" />
+      </View>
     </View>
   );
 };
