@@ -15,12 +15,26 @@ function Router() {
       <Stack.Screen
         name="Login"
         component={Login}
-        options={{headerShown: false}}
+        options={{
+          title: false,
+          headerStyle: {
+            elevation: 0,
+            shadowOpacity: 0,
+            borderBottomWidth: 0,
+          },
+        }}
       />
       <Stack.Screen
         name="Register"
         component={Register}
-        options={{headerShown: false}}
+        options={{
+          title: false,
+          headerStyle: {
+            elevation: 0,
+            shadowOpacity: 0,
+            borderBottomWidth: 0,
+          },
+        }}
       />
       <Stack.Screen
         name="WelcomeAuth"

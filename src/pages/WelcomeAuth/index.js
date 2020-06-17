@@ -3,13 +3,16 @@ import {View, Text, StatusBar} from 'react-native';
 import Illus from './../../assets/illustration/keluarga-bahagia.svg';
 import {TitleIntro, DescIntro, BtnBlue, BtnWhite} from '../../component/atoms';
 
-const WelcomeAuth = () => {
+const WelcomeAuth = ({navigation}) => {
+  const handleGoto = screen => {
+    navigation.navigate(screen);
+  };
+
   return (
     <View style={{height: '100%'}}>
       <View
         style={{
           backgroundColor: '#FFE8D2',
-          width: '100%',
           alignItems: 'center',
           height: '60%',
         }}>
@@ -28,8 +31,8 @@ const WelcomeAuth = () => {
         }}>
         <TitleIntro />
         <DescIntro />
-        <BtnBlue value="LOGIN" onPress={() => alert('Login')} />
-        <BtnWhite value="DAFTAR" onPress={() => alert('Daftar')} />
+        <BtnBlue value="LOGIN" onPress={() => handleGoto('Login')} />
+        <BtnWhite value="DAFTAR" onPress={() => handleGoto('Register')} />
       </View>
     </View>
   );
