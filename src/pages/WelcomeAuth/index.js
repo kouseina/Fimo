@@ -28,8 +28,8 @@ const WelcomeAuth = () => {
         }}>
         <TitleIntro />
         <DescIntro />
-        <BtnBlue value="LOGIN" />
-        <BtnWhite value="DAFTAR" />
+        <BtnBlue value="LOGIN" onPress={() => alert('Login')} />
+        <BtnWhite value="DAFTAR" onPress={() => alert('Daftar')} />
       </View>
     </View>
   );

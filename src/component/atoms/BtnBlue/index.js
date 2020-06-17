@@ -2,9 +2,9 @@ import React from 'react';
 import {TouchableOpacity} from 'react-native-gesture-handler';
 import {Text} from 'react-native';
 
-const BtnBlue = ({value}) => {
+const BtnBlue = ({value, onPress}) => {
   return (
-    <TouchableOpacity style={styles.btn}>
+    <TouchableOpacity style={styles.btn} onPress={onPress}>
       <Text style={styles.text}>{value}</Text>
     </TouchableOpacity>
   );
