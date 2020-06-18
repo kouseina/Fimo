@@ -8,6 +8,9 @@ import Transaksi from './Transaksi';
 import Rencana from './Rencana';
 import Akun from './Akun';
 import TambahTransaksi from './TambahTransaksi';
+import Mei from './Mei';
+import Juni from './Juni';
+import Juli from './Juli';
 
 export {
   Splash,
@@ -20,4 +23,7 @@ export {
   Rencana,
   Akun,
   TambahTransaksi,
+  Mei,
+  Juni,
+  Juli,
 };
