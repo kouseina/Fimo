@@ -11,7 +11,8 @@ import {
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 
 import {NavigationContainer} from '@react-navigation/native';
-import Router from './router';
+import NavStack from './navStack';
+import TabNav from './tabNav';
 
 const App = () => {
   return (
@@ -21,7 +22,7 @@ const App = () => {
         backgroundColor="transparent"
         barStyle="dark-content"
       />
-      <Router />
+      <NavStack />
     </NavigationContainer>
   );
 };

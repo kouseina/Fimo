@@ -2,12 +2,16 @@ import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 import {TextInput} from 'react-native-gesture-handler';
 
-const FormInput = ({value}) => {
+const FormInput = ({value, secure}) => {
   const placeholder = 'Masukkan ' + value.toString();
   return (
     <View>
       <Text style={styles.titleInput}>{value}</Text>
-      <TextInput style={styles.textInput} placeholder={placeholder} />
+      <TextInput
+        style={styles.textInput}
+        placeholder={placeholder}
+        secureTextEntry={secure}
+      />
     </View>
   );
 };

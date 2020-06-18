@@ -15,14 +15,14 @@ const Login = ({navigation}) => {
   const [toggleCheckBox, setToggleCheckBox] = useState(false);
 
   const handleGoto = screen => {
-    navigation.navigate(screen);
+    navigation.replace(screen);
   };
 
   return (
     <ScrollView style={styles.layout}>
       <FormScreen />
       <FormInput value="Email / Nomor Telepon" />
-      <FormInput value="Password" />
+      <FormInput value="Password" secure={true} />
       <View style={styles.wrapperRemind}>
         <View style={styles.wrapperIngatSaya}>
           <CheckBox
@@ -38,7 +38,7 @@ const Login = ({navigation}) => {
         </View>
         <Text style={styles.lupaSandi}>Lupa kata sandi?</Text>
       </View>
-      <BtnBlue value="LOGIN" />
+      <BtnBlue value="LOGIN" onPress={() => handleGoto('ManagementKeuangan')} />
       <View style={{marginVertical: '3%'}}>
         <Atau />
       </View>

@@ -14,7 +14,7 @@ const BtnGoogle = ({onPress}) => {
 
 const styles = StyleSheet.create({
   Btn: {
-    width: 350,
+    width: '100%',
     alignItems: 'center',
     justifyContent: 'center',
     paddingVertical: 12,
@@ -22,6 +22,7 @@ const styles = StyleSheet.create({
     borderColor: '#DEDEDE',
     borderWidth: 2,
     flexDirection: 'row',
+    minWidth: 350,
   },
 
   Text: {

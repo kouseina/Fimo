@@ -6,16 +6,23 @@ import Atau from './../../assets/img/atau.svg';
 import FormScreen from '../../component/FormScreen';
 import FormInput from '../../component/atoms/FormInput';
 
-const Register = () => {
+const Register = ({navigation}) => {
+  const handleGoto = screen => {
+    navigation.replace(screen);
+  };
+
   return (
     <ScrollView style={styles.layout}>
       <FormScreen />
       <FormInput value="Nama" />
       <FormInput value="Email" />
-      <FormInput value="Password" />
+      <FormInput value="Password" secure={true} />
       <FormInput value="Nomor Telepon" />
       <View style={styles.wrapperBtn}>
-        <BtnBlue value="DAFTAR" />
+        <BtnBlue
+          value="DAFTAR"
+          onPress={() => handleGoto('ManagementKeuangan')}
+        />
         <View style={{marginVertical: '3%'}}>
           <Atau />
         </View>

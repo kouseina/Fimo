@@ -14,7 +14,7 @@ const styles = {
     textAlign: 'center',
     color: '#777',
     fontSize: 14,
-    marginBottom: 50,
+    marginBottom: 40,
   },
 };
 

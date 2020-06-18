@@ -1,10 +1,16 @@
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
-import {Splash, Login, Register, WelcomeAuth} from '../pages';
+import {
+  Splash,
+  Login,
+  Register,
+  WelcomeAuth,
+  ManagementKeuangan,
+} from '../pages';
 
 const Stack = createStackNavigator();
 
-function Router() {
+function NavStack() {
   return (
     <Stack.Navigator>
       <Stack.Screen
@@ -41,8 +47,13 @@ function Router() {
         component={WelcomeAuth}
         options={{headerShown: false}}
       />
+      <Stack.Screen
+        name="ManagementKeuangan"
+        component={ManagementKeuangan}
+        options={{headerShown: false}}
+      />
     </Stack.Navigator>
   );
 }
 
-export default Router;
+export default NavStack;

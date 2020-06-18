@@ -1,6 +1,6 @@
 import React from 'react';
 import {TouchableOpacity} from 'react-native-gesture-handler';
-import {Text} from 'react-native';
+import {Text, StyleSheet} from 'react-native';
 
 const BtnWhite = ({value, onPress}) => {
   return (
@@ -10,21 +10,22 @@ const BtnWhite = ({value, onPress}) => {
   );
 };
 
-const styles = {
+const styles = StyleSheet.create({
   Btn: {
-    width: 350,
+    width: '100%',
     alignItems: 'center',
     justifyContent: 'center',
     paddingVertical: 12,
     borderRadius: 5,
     borderColor: '#5782FC',
     borderWidth: 2,
+    minWidth: 310,
   },
 
   Text: {
     color: '#5782FC',
     fontSize: 16,
   },
-};
+});
 
 export default BtnWhite;
