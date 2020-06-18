@@ -9,6 +9,7 @@ import RencanaAktif from './rencana-blue.svg';
 import RencanaNonAktif from './rencana-grey.svg';
 import AkunAktif from './akun-blue.svg';
 import AkunNonAktif from './akun-grey.svg';
+import Plus from './plus.svg';
 
 export {
   Line,
@@ -22,4 +23,5 @@ export {
   RencanaNonAktif,
   AkunAktif,
   AkunNonAktif,
+  Plus,
 };

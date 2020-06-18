@@ -12,7 +12,6 @@ import {Colors} from 'react-native/Libraries/NewAppScreen';
 
 import {NavigationContainer} from '@react-navigation/native';
 import NavStack from './navStack';
-import TabNav from './tabNav';
 
 const App = () => {
   return (

@@ -6,6 +6,7 @@ import {
   Register,
   WelcomeAuth,
   ManagementKeuangan,
+  TambahTransaksi,
 } from '../pages';
 
 const Stack = createStackNavigator();
@@ -50,8 +51,15 @@ function NavStack() {
       <Stack.Screen
         name="ManagementKeuangan"
         component={ManagementKeuangan}
-        options={{headerShown: false}}
+        options={{
+          headerStyle: {
+            elevation: 0,
+            shadowOpacity: 0,
+            borderBottomWidth: 0,
+          },
+        }}
       />
+      <Stack.Screen name="TambahTransaksi" component={TambahTransaksi} />
     </Stack.Navigator>
   );
 }
