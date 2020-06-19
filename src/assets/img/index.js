@@ -10,6 +10,11 @@ import RencanaNonAktif from './rencana-grey.svg';
 import AkunAktif from './akun-blue.svg';
 import AkunNonAktif from './akun-grey.svg';
 import Plus from './plus.svg';
+import Ibu from './ibu.svg';
+import DanaDarurat from './dana-darurat.svg';
+import TransaksiBerulang from './transaksi-berulang.svg';
+import Tagihan from './tagihan.svg';
+import ArrowRight from './arrow-right.svg';
 
 export {
   Line,
@@ -24,4 +29,9 @@ export {
   AkunAktif,
   AkunNonAktif,
   Plus,
+  Ibu,
+  DanaDarurat,
+  TransaksiBerulang,
+  Tagihan,
+  ArrowRight,
 };
