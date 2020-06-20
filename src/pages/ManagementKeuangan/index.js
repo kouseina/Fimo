@@ -7,8 +7,11 @@ import {BaseRouter} from '@react-navigation/native';
 const ManagementKeuangan = ({navigation}) => {
   return (
     <View style={{height: '100%'}}>
-      <HeaderDrawer onPress={() => navigation.toggleDrawer()} />
-      <BotTabNav navigation={navigation} />
+      <HeaderDrawer
+        onPress={() => navigation.toggleDrawer()}
+        title="Management Keuangan"
+      />
+      <BotTabNav navigation={navigation} bot="Transaksi" />
     </View>
   );
 };

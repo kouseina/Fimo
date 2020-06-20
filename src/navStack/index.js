@@ -7,8 +7,10 @@ import {
   WelcomeAuth,
   ManagementKeuangan,
   TambahTransaksi,
+  Akun,
 } from '../pages';
 import NavDrawer from '../navDrawer';
+import Profile from '../navDrawer/Profile';
 
 const Stack = createStackNavigator();
 
@@ -65,6 +67,7 @@ function NavStack() {
           },
         }}
       />
+      <Stack.Screen name="Akun" component={Akun} />
     </Stack.Navigator>
   );
 }

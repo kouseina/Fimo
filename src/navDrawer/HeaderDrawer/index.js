@@ -3,13 +3,13 @@ import {StyleSheet, Text, View} from 'react-native';
 import {TouchableOpacity} from 'react-native-gesture-handler';
 import {Menu, Notif, Kalender} from '../../assets/img';
 
-export default function HeaderDrawer({onPress}) {
+export default function HeaderDrawer({onPress, title}) {
   return (
     <View style={styles.header}>
       <TouchableOpacity style={styles.menu} onPress={onPress}>
         <Menu />
       </TouchableOpacity>
-      <Text style={styles.title}>Management Keuangan</Text>
+      <Text style={styles.title}>{title}</Text>
       <View />
     </View>
   );

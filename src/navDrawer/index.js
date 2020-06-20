@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {View, Text, Image} from 'react-native';
 import {
   createDrawerNavigator,
   DrawerContentScrollView,
@@ -11,8 +11,11 @@ import {
   KonsultasiKeuangan,
   TipsMengaturKeuangan,
   ManagementKeuangan,
+  Akun,
 } from './../pages';
-import {IconManagementKeuangan, IconArisan} from '../assets/img';
+import {IconManagementKeuangan, IconArisan, AkunAktif} from '../assets/img';
+import {TouchableOpacity} from 'react-native-gesture-handler';
+import Profile from './Profile';
 
 function CustomDrawerContent(props) {
   return (
@@ -34,10 +37,16 @@ const Drawer = createDrawerNavigator();
 export default function NavDrawer() {
   return (
     <Drawer.Navigator
-      drawerContent={props => <CustomDrawerContent {...props} />}>
+      drawerContent={props => <CustomDrawerContent {...props} />}
+      initialRouteName="Management Keuangan">
+      <Drawer.Screen
+        options={{drawerLabel: Profile}}
+        name="Akun"
+        component={Akun}
+      />
       <Drawer.Screen
         options={{drawerIcon: IconManagementKeuangan}}
-        name="ManagementKeuangan"
+        name="Management Keuangan"
         component={ManagementKeuangan}
       />
       <Drawer.Screen
@@ -47,12 +56,12 @@ export default function NavDrawer() {
       />
       <Drawer.Screen
         options={{drawerIcon: IconArisan}}
-        name="KonsultasiKeuangan"
+        name="Konsultasi Keuangan"
         component={KonsultasiKeuangan}
       />
       <Drawer.Screen
         options={{drawerIcon: IconArisan}}
-        name="TipsMengaturKeuangan"
+        name="Tips Mengatur Keuangan"
         component={TipsMengaturKeuangan}
       />
     </Drawer.Navigator>

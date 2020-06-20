@@ -20,6 +20,12 @@ import Notif from './notif.svg';
 import Kalender from './kalender.svg';
 import IconManagementKeuangan from './management-keuangan.svg';
 import IconArisan from './arisan.svg';
+import Women from './women.svg';
+import Setting from './setting.svg';
+import Password from './password.svg';
+import NotifGrey from './nottif-grey.svg';
+import Like from './like.svg';
+import LogOut from './log-out.svg';
 
 export {
   Line,
@@ -44,4 +50,10 @@ export {
   Kalender,
   IconManagementKeuangan,
   IconArisan,
+  Women,
+  Setting,
+  Password,
+  NotifGrey,
+  Like,
+  LogOut,
 };
