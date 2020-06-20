@@ -11,17 +11,19 @@ import {
   KonsultasiKeuangan,
   TipsMengaturKeuangan,
   ManagementKeuangan,
-  TambahTransaksi,
 } from './../pages';
-import {ArrowRight} from '../assets/img';
+import {IconManagementKeuangan, IconArisan} from '../assets/img';
 
 function CustomDrawerContent(props) {
   return (
     <DrawerContentScrollView {...props}>
-      <DrawerItemList {...props} />
-      <DrawerItem
-        label="Toggle drawer"
-        onPress={() => props.navigation.toggleDrawer()}
+      <DrawerItemList
+        labelStyle={{
+          color: '#5B687B',
+          fontWeight: 'bold',
+          fontSize: 16,
+        }}
+        {...props}
       />
     </DrawerContentScrollView>
   );
@@ -33,14 +35,26 @@ export default function NavDrawer() {
   return (
     <Drawer.Navigator
       drawerContent={props => <CustomDrawerContent {...props} />}>
-      <Drawer.Screen name="ManagementKeuangan" component={ManagementKeuangan} />
-      <Drawer.Screen name="Arisan" component={Arisan} />
-      <Drawer.Screen name="KonsultasiKeuangan" component={KonsultasiKeuangan} />
       <Drawer.Screen
+        options={{drawerIcon: IconManagementKeuangan}}
+        name="ManagementKeuangan"
+        component={ManagementKeuangan}
+      />
+      <Drawer.Screen
+        options={{drawerIcon: IconArisan}}
+        name="Arisan"
+        component={Arisan}
+      />
+      <Drawer.Screen
+        options={{drawerIcon: IconArisan}}
+        name="KonsultasiKeuangan"
+        component={KonsultasiKeuangan}
+      />
+      <Drawer.Screen
+        options={{drawerIcon: IconArisan}}
         name="TipsMengaturKeuangan"
         component={TipsMengaturKeuangan}
       />
-      <Drawer.Screen name="TambahTransaksi" component={TambahTransaksi} />
     </Drawer.Navigator>
   );
 }

@@ -15,6 +15,11 @@ import DanaDarurat from './dana-darurat.svg';
 import TransaksiBerulang from './transaksi-berulang.svg';
 import Tagihan from './tagihan.svg';
 import ArrowRight from './arrow-right.svg';
+import Menu from './menu.svg';
+import Notif from './notif.svg';
+import Kalender from './kalender.svg';
+import IconManagementKeuangan from './management-keuangan.svg';
+import IconArisan from './arisan.svg';
 
 export {
   Line,
@@ -34,4 +39,9 @@ export {
   TransaksiBerulang,
   Tagihan,
   ArrowRight,
+  Menu,
+  Notif,
+  Kalender,
+  IconManagementKeuangan,
+  IconArisan,
 };

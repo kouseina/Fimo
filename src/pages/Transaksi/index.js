@@ -1,12 +1,13 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
-import {ScrollView} from 'react-native-gesture-handler';
-import {Header} from 'react-native/Libraries/NewAppScreen';
+import {TouchableOpacity} from 'react-native-gesture-handler';
 import TopTabNav from '../../topTabNav';
+import {Menu, Notif, Kalender} from '../../assets/img';
+import HeaderDrawer from '../../navDrawer/HeaderDrawer';
 
 const Transaksi = () => {
   return (
-    <View style={{height: '100%'}}>
+    <View style={{height: '100%', backgroundColor: '#fff'}}>
       <TopTabNav />
     </View>
   );

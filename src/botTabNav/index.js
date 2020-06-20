@@ -53,10 +53,11 @@ import {BtnPlus} from '../component/atoms';
 
 const Tab = createBottomTabNavigator();
 
-function botTabNav({navigation}) {
+function botTabNav({navigation, bot}) {
   const handleGoto = () => {
     navigation.navigate('TambahTransaksi');
   };
+
   return (
     <Tab.Navigator
       screenOptions={({route}) => ({

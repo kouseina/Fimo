@@ -54,6 +54,17 @@ function NavStack() {
         component={NavDrawer}
         options={{headerShown: false}}
       />
+      <Stack.Screen
+        name="TambahTransaksi"
+        component={TambahTransaksi}
+        options={{
+          headerStyle: {
+            elevation: 0,
+            shadowOpacity: 0,
+            borderBottomWidth: 0,
+          },
+        }}
+      />
     </Stack.Navigator>
   );
 }
