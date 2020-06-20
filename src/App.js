@@ -12,6 +12,7 @@ import {Colors} from 'react-native/Libraries/NewAppScreen';
 
 import {NavigationContainer} from '@react-navigation/native';
 import NavStack from './navStack';
+import NavDrawer from './navDrawer';
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
         barStyle="dark-content"
       />
       <NavStack />
+      {/* <NavDrawer /> */}
     </NavigationContainer>
   );
 };

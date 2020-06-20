@@ -11,6 +11,9 @@ import TambahTransaksi from './TambahTransaksi';
 import Mei from './Mei';
 import Juni from './Juni';
 import Juli from './Juli';
+import Arisan from './Arisan';
+import KonsultasiKeuangan from './KonsultasiKeuangan';
+import TipsMengaturKeuangan from './TipsMengaturKeuangan';
 
 export {
   Splash,
@@ -26,4 +29,7 @@ export {
   Mei,
   Juni,
   Juli,
+  Arisan,
+  KonsultasiKeuangan,
+  TipsMengaturKeuangan,
 };

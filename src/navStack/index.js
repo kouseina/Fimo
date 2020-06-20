@@ -8,6 +8,7 @@ import {
   ManagementKeuangan,
   TambahTransaksi,
 } from '../pages';
+import NavDrawer from '../navDrawer';
 
 const Stack = createStackNavigator();
 
@@ -49,17 +50,10 @@ function NavStack() {
         options={{headerShown: false}}
       />
       <Stack.Screen
-        name="ManagementKeuangan"
-        component={ManagementKeuangan}
-        options={{
-          headerStyle: {
-            elevation: 0,
-            shadowOpacity: 0,
-            borderBottomWidth: 0,
-          },
-        }}
+        name="Content"
+        component={NavDrawer}
+        options={{headerShown: false}}
       />
-      <Stack.Screen name="TambahTransaksi" component={TambahTransaksi} />
     </Stack.Navigator>
   );
 }

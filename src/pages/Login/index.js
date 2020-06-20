@@ -38,7 +38,7 @@ const Login = ({navigation}) => {
         </View>
         <Text style={styles.lupaSandi}>Lupa kata sandi?</Text>
       </View>
-      <BtnBlue value="LOGIN" onPress={() => handleGoto('ManagementKeuangan')} />
+      <BtnBlue value="LOGIN" onPress={() => handleGoto('Content')} />
       <View style={{marginVertical: '3%'}}>
         <Atau />
       </View>

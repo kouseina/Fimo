@@ -19,10 +19,7 @@ const Register = ({navigation}) => {
       <FormInput value="Password" secure={true} />
       <FormInput value="Nomor Telepon" />
       <View style={styles.wrapperBtn}>
-        <BtnBlue
-          value="DAFTAR"
-          onPress={() => handleGoto('ManagementKeuangan')}
-        />
+        <BtnBlue value="DAFTAR" onPress={() => handleGoto('Content')} />
         <View style={{marginVertical: '3%'}}>
           <Atau />
         </View>
