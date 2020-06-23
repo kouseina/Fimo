@@ -12,7 +12,7 @@ yarn install
 <h4>3. Run project on iOS / Android.</h4>
 
 ```
- react-native run-android // npm run android
+react-native run-android // npm run android
  // or
 react-native run-ios // yarn android
 ```
