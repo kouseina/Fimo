@@ -13,6 +13,6 @@ yarn install
 
 ```
 react-native run-android // npm run android
- // or
+// or
 react-native run-ios // yarn android
 ```
