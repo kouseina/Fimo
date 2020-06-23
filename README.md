@@ -1,7 +1,7 @@
 <h1>FIMO</h1>
 <h2>How to use?</h2>
-<h3>1. Download or clone this repo.</br></h3>
-<h3>2. Install dependencies.</br></h3>
+<h4>1. Download or clone this repo.</br></h4>
+<h4>2. Install dependencies.</br></h4>
 
 ```
 npm install
@@ -9,7 +9,7 @@ npm install
 yarn install
 ```
 
-<h3>3. Run project on iOS / Android.</h3>
+<h4>3. Run project on iOS / Android.</h4>
 
 ```
  react-native run-android // npm run android
