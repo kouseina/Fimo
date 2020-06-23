@@ -1,20 +1,11 @@
 import React from 'react';
-import {View, Text, Image} from 'react-native';
 import {
   createDrawerNavigator,
   DrawerContentScrollView,
   DrawerItemList,
-  DrawerItem,
 } from '@react-navigation/drawer';
-import {
-  Arisan,
-  KonsultasiKeuangan,
-  TipsMengaturKeuangan,
-  ManagementKeuangan,
-  Akun,
-} from './../pages';
-import {IconManagementKeuangan, IconArisan, AkunAktif} from '../assets/img';
-import {TouchableOpacity} from 'react-native-gesture-handler';
+import {Arisan, ManagementKeuangan, Akun, Konsultasi} from './../pages';
+import {IconManagementKeuangan, IconArisan, IconMicroblog} from '../assets/img';
 import Profile from './Profile';
 
 function CustomDrawerContent(props) {
@@ -55,14 +46,9 @@ export default function NavDrawer() {
         component={Arisan}
       />
       <Drawer.Screen
-        options={{drawerIcon: IconArisan}}
-        name="Konsultasi Keuangan"
-        component={KonsultasiKeuangan}
-      />
-      <Drawer.Screen
-        options={{drawerIcon: IconArisan}}
-        name="Tips Mengatur Keuangan"
-        component={TipsMengaturKeuangan}
+        options={{drawerIcon: IconMicroblog}}
+        name="Microblog"
+        component={Konsultasi}
       />
     </Drawer.Navigator>
   );

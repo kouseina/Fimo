@@ -8,6 +8,7 @@ import {
   ManagementKeuangan,
   TambahTransaksi,
   Akun,
+  Kategori,
 } from '../pages';
 import NavDrawer from '../navDrawer';
 import Profile from '../navDrawer/Profile';
@@ -68,6 +69,17 @@ function NavStack() {
         }}
       />
       <Stack.Screen name="Akun" component={Akun} />
+      <Stack.Screen
+        name="Kategori"
+        component={Kategori}
+        options={{
+          headerStyle: {
+            elevation: 0,
+            shadowOpacity: 0,
+            borderBottomWidth: 0,
+          },
+        }}
+      />
     </Stack.Navigator>
   );
 }

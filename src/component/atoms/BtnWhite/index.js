@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     borderColor: '#5782FC',
     borderWidth: 2,
-    minWidth: 310,
+    minWidth: 150,
   },
 
   Text: {

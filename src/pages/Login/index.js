@@ -21,13 +21,13 @@ const Login = ({navigation}) => {
   return (
     <ScrollView style={styles.layout}>
       <FormScreen />
-      <FormInput value="Email / Nomor Telepon" />
-      <FormInput value="Password" secure={true} />
+      <FormInput title="Email / Nomor Telepon" />
+      <FormInput title="Password" secure={true} />
       <View style={styles.wrapperRemind}>
         <View style={styles.wrapperIngatSaya}>
           <CheckBox
             disabled={false}
-            value={toggleCheckBox}
+            title={toggleCheckBox}
             onValueChange={() =>
               toggleCheckBox
                 ? setToggleCheckBox(false)

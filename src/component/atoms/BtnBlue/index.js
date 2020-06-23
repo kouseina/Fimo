@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     paddingVertical: 12,
     borderRadius: 5,
-    minWidth: 310,
+    minWidth: 150,
   },
 
   text: {

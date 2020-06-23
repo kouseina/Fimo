@@ -26,6 +26,18 @@ import Password from './password.svg';
 import NotifGrey from './nottif-grey.svg';
 import Like from './like.svg';
 import LogOut from './log-out.svg';
+import BahanMakanan from './bahan-makanan.svg';
+import Pakaian from './pakaian.svg';
+import PeralatanRumahTangga from './peralatan-rumah-tannga.svg';
+import Ojek from './ojek.svg';
+import Bensin from './bensin.svg';
+import SppSekolah from './spp-sekolah.svg';
+import Listrik from './listrik.svg';
+import Air from './air.svg';
+import Telepon from './telepon.svg';
+import KonsultasiAktif from './konsul-blue.svg';
+import KonsultasiNonAktif from './konsul-grey.svg';
+import IconMicroblog from './microblog.svg';
 
 export {
   Line,
@@ -56,4 +68,16 @@ export {
   NotifGrey,
   Like,
   LogOut,
+  BahanMakanan,
+  Pakaian,
+  PeralatanRumahTangga,
+  Ojek,
+  Bensin,
+  SppSekolah,
+  Listrik,
+  Air,
+  Telepon,
+  KonsultasiAktif,
+  KonsultasiNonAktif,
+  IconMicroblog,
 };

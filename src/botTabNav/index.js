@@ -1,8 +1,6 @@
 import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import {Transaksi, Laporan, Rencana, Akun, TambahTransaksi} from '../pages';
-import Ionicons from 'react-native-vector-icons/Ionicons';
-import {View, Text} from 'react-native';
+import {Transaksi, Laporan, Rencana, Konsultasi} from '../pages';
 import {
   TransaksiAktif,
   TransaksiNonAktif,
@@ -12,12 +10,9 @@ import {
   RencanaNonAktif,
   AkunAktif,
   AkunNonAktif,
-  Plus,
+  KonsultasiAktif,
+  KonsultasiNonAktif,
 } from '../assets/img';
-import {
-  TouchableHighlight,
-  TouchableOpacity,
-} from 'react-native-gesture-handler';
 import {BtnPlus} from '../component/atoms';
 
 // function IconWithBadge({name, badgeCount, color, size}) {
@@ -70,8 +65,8 @@ function botTabNav({navigation}) {
             return <BtnPlus onPress={() => handleGoto()} />;
           } else if (route.name === 'Rencana') {
             return focused ? <RencanaAktif /> : <RencanaNonAktif />;
-          } else if (route.name === 'Akun') {
-            return focused ? <AkunAktif /> : <AkunNonAktif />;
+          } else if (route.name === 'Konsul') {
+            return focused ? <KonsultasiAktif /> : <KonsultasiNonAktif />;
           }
         },
       })}>
@@ -83,7 +78,7 @@ function botTabNav({navigation}) {
         component={Transaksi}
       />
       <Tab.Screen name="Rencana" component={Rencana} />
-      <Tab.Screen name="Akun" component={Akun} />
+      <Tab.Screen name="Konsul" component={Konsultasi} />
     </Tab.Navigator>
   );
 }

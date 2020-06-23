@@ -2,17 +2,26 @@ import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 import FormInput from '../../component/atoms/FormInput';
 import {BtnBlue} from '../../component/atoms';
-import {ScrollView} from 'react-native-gesture-handler';
+import {ScrollView, TouchableOpacity} from 'react-native-gesture-handler';
+import {ArrowRight} from '../../assets/img';
 
-const TambahTransaksi = () => {
+const TambahTransaksi = ({navigation}) => {
   return (
     <ScrollView style={styles.layout}>
-      <FormInput value="Jumlah" />
-      <FormInput value="Kategori" />
-      <FormInput value="Catatan" />
-      <FormInput value="Tanggal" />
+      <FormInput title="Jumlah" />
+      <View>
+        <Text style={styles.titleInput}>Kategori</Text>
+        <TouchableOpacity
+          style={styles.textInput}
+          onPress={() => navigation.navigate('Kategori')}>
+          <Text style={styles.text}>Pilih Kategori</Text>
+          <ArrowRight />
+        </TouchableOpacity>
+      </View>
+      <FormInput title="Catatan" />
+      <FormInput title="Tanggal" value="Hari ini 26 Juni 2020" />
       <View style={styles.BtnBlue}>
-        <BtnBlue value="SIMPAN" />
+        <BtnBlue value="SIMPAN" onPress={() => navigation.goBack()} />
       </View>
     </ScrollView>
   );
@@ -27,6 +36,28 @@ const styles = StyleSheet.create({
 
   BtnBlue: {
     marginTop: '10%',
+  },
+
+  titleInput: {
+    fontSize: 16,
+    color: '#333',
+    fontWeight: 'bold',
+    marginBottom: '3%',
+  },
+
+  textInput: {
+    padding: 16,
+    borderColor: '#d6d6d6',
+    borderWidth: 1,
+    borderRadius: 5,
+    marginBottom: '3%',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+
+  text: {
+    color: '#9A9A9A',
   },
 });
 

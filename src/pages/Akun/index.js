@@ -26,7 +26,7 @@ const ItemMenu = ({icon, name}) => {
 
 const Akun = ({navigation}) => {
   return (
-    <ScrollView>
+    <ScrollView style={styles.bg}>
       <HeaderDrawer onPress={() => navigation.toggleDrawer()} />
       <View style={styles.layout}>
         <View style={styles.header}>
@@ -57,8 +57,11 @@ const Akun = ({navigation}) => {
 };
 
 const styles = StyleSheet.create({
-  layout: {
+  bg: {
     backgroundColor: '#fff',
+  },
+
+  layout: {
     paddingVertical: '10%',
   },
 

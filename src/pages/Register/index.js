@@ -14,10 +14,10 @@ const Register = ({navigation}) => {
   return (
     <ScrollView style={styles.layout}>
       <FormScreen />
-      <FormInput value="Nama" />
-      <FormInput value="Email" />
-      <FormInput value="Password" secure={true} />
-      <FormInput value="Nomor Telepon" />
+      <FormInput title="Nama" />
+      <FormInput title="Email" />
+      <FormInput title="Password" secure={true} />
+      <FormInput title="Nomor Telepon" />
       <View style={styles.wrapperBtn}>
         <BtnBlue value="DAFTAR" onPress={() => handleGoto('Content')} />
         <View style={{marginVertical: '3%'}}>

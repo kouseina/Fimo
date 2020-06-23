@@ -5,6 +5,7 @@ const DescIntro = () => {
   return (
     <Text style={styles.desc}>
       Atasi permasalahan keuangan keluarga dengan Fimo agar tercipta keluaga
+      yang bahagia
     </Text>
   );
 };

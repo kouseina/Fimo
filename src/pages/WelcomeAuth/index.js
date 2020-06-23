@@ -23,9 +23,14 @@ const WelcomeAuth = ({navigation}) => {
       </View>
       <View style={styles.bottom}>
         <TitleIntro />
-        <DescIntro />
-        <BtnBlue value="LOGIN" onPress={() => handleGoto('Login')} />
-        <BtnWhite value="DAFTAR" onPress={() => handleGoto('Register')} />
+        <View style={{width: '80%'}}>
+          <DescIntro />
+        </View>
+        <View />
+        <View style={styles.Btn}>
+          <BtnWhite value="DAFTAR" onPress={() => handleGoto('Register')} />
+          <BtnBlue value="LOGIN" onPress={() => handleGoto('Login')} />
+        </View>
       </View>
     </View>
   );
@@ -49,6 +54,12 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     paddingVertical: 20,
     paddingHorizontal: 50,
+  },
+
+  Btn: {
+    flexDirection: 'row',
+    width: '100%',
+    justifyContent: 'space-between',
   },
 });
 
