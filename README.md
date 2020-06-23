@@ -1,7 +1,7 @@
 <h1>FIMO</h1>
 <h2>How to use?</h2>
-<li>Download or clone this repo.</li>
-<li>Install dependencies.</li>
+1. Download or clone this repo.
+2. Install dependencies.
 
 npm install
 // or
