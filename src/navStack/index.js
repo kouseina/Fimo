@@ -5,10 +5,11 @@ import {
   Login,
   Register,
   WelcomeAuth,
-  ManagementKeuangan,
   TambahTransaksi,
   Akun,
   Kategori,
+  Rencana,
+  DanaDarurat,
 } from '../pages';
 import NavDrawer from '../navDrawer';
 import Profile from '../navDrawer/Profile';
@@ -72,6 +73,24 @@ function NavStack() {
       <Stack.Screen
         name="Kategori"
         component={Kategori}
+        options={{
+          headerShown: false,
+        }}
+      />
+      <Stack.Screen
+        name="Rencana"
+        component={Rencana}
+        options={{
+          headerStyle: {
+            elevation: 0,
+            shadowOpacity: 0,
+            borderBottomWidth: 0,
+          },
+        }}
+      />
+      <Stack.Screen
+        name="Dana Darurat"
+        component={DanaDarurat}
         options={{
           headerStyle: {
             elevation: 0,

@@ -14,6 +14,7 @@ import Juli from './Juli';
 import Arisan from './Arisan';
 import Kategori from './Kategori';
 import Konsultasi from './Konsultasi';
+import DanaDarurat from './DanaDarurat';
 
 export {
   Splash,
@@ -32,4 +33,5 @@ export {
   Arisan,
   Kategori,
   Konsultasi,
+  DanaDarurat,
 };

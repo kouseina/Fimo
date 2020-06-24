@@ -5,6 +5,14 @@ import {BtnBlue} from '../../component/atoms';
 import {ScrollView, TouchableOpacity} from 'react-native-gesture-handler';
 import {ArrowRight} from '../../assets/img';
 
+const Btn = () => {
+  return (
+    <View>
+      <BtnBlue />
+    </View>
+  );
+};
+
 const TambahTransaksi = ({navigation}) => {
   return (
     <ScrollView style={styles.layout}>
@@ -21,7 +29,10 @@ const TambahTransaksi = ({navigation}) => {
       <FormInput title="Catatan" />
       <FormInput title="Tanggal" value="Hari ini 26 Juni 2020" />
       <View style={styles.BtnBlue}>
-        <BtnBlue value="SIMPAN" onPress={() => navigation.goBack()} />
+        <BtnBlue
+          value="SIMPAN"
+          onPress={() => navigation.goBack(alert('OK'))}
+        />
       </View>
     </ScrollView>
   );

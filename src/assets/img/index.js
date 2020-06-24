@@ -38,6 +38,8 @@ import Telepon from './telepon.svg';
 import KonsultasiAktif from './konsul-blue.svg';
 import KonsultasiNonAktif from './konsul-grey.svg';
 import IconMicroblog from './microblog.svg';
+import ArrowDown from './arrow-down.svg';
+import ArrowUp from './arrow-up.svg';
 
 export {
   Line,
@@ -80,4 +82,6 @@ export {
   KonsultasiAktif,
   KonsultasiNonAktif,
   IconMicroblog,
+  ArrowDown,
+  ArrowUp,
 };

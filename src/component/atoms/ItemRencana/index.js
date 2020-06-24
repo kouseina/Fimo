@@ -18,9 +18,9 @@ const Icon = ({icon}) => {
   }
 };
 
-export default function ItemRencana({warna, title, desc, icon}) {
+export default function ItemRencana({warna, title, desc, icon, onPress}) {
   return (
-    <TouchableOpacity style={styles.wrapper}>
+    <TouchableOpacity style={styles.wrapper} onPress={onPress}>
       <Icon icon={icon} />
       <View style={styles.wrapperText}>
         <Text
