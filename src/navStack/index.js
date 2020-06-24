@@ -10,6 +10,8 @@ import {
   Kategori,
   Rencana,
   DanaDarurat,
+  TransaksiBerulang,
+  TambahTransaksiBerulang,
 } from '../pages';
 import NavDrawer from '../navDrawer';
 import Profile from '../navDrawer/Profile';
@@ -74,7 +76,11 @@ function NavStack() {
         name="Kategori"
         component={Kategori}
         options={{
-          headerShown: false,
+          headerStyle: {
+            elevation: 0,
+            shadowOpacity: 0,
+            borderBottomWidth: 0,
+          },
         }}
       />
       <Stack.Screen
@@ -91,6 +97,28 @@ function NavStack() {
       <Stack.Screen
         name="Dana Darurat"
         component={DanaDarurat}
+        options={{
+          headerStyle: {
+            elevation: 0,
+            shadowOpacity: 0,
+            borderBottomWidth: 0,
+          },
+        }}
+      />
+      <Stack.Screen
+        name="Transaksi Berulang"
+        component={TransaksiBerulang}
+        options={{
+          headerStyle: {
+            elevation: 0,
+            shadowOpacity: 0,
+            borderBottomWidth: 0,
+          },
+        }}
+      />
+      <Stack.Screen
+        name="Tambah Transaksi Berulang"
+        component={TambahTransaksiBerulang}
         options={{
           headerStyle: {
             elevation: 0,

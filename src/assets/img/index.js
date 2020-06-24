@@ -40,6 +40,8 @@ import KonsultasiNonAktif from './konsul-grey.svg';
 import IconMicroblog from './microblog.svg';
 import ArrowDown from './arrow-down.svg';
 import ArrowUp from './arrow-up.svg';
+import Edit from './edit.svg';
+import Delete from './delete.svg';
 
 export {
   Line,
@@ -84,4 +86,6 @@ export {
   IconMicroblog,
   ArrowDown,
   ArrowUp,
+  Edit,
+  Delete,
 };

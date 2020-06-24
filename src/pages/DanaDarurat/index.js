@@ -1,7 +1,7 @@
-import React, {Component} from 'react';
+import React, {Component, useState} from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 import FormInput from '../../component/atoms/FormInput';
-import {BtnBlue} from '../../component/atoms';
+import {BtnBlue, BtnWhite} from '../../component/atoms';
 import {TextInput} from 'react-native-gesture-handler';
 
 import DropDownPicker from 'react-native-dropdown-picker';
@@ -28,6 +28,18 @@ class DanaDarurat extends Component {
         <View style={styles.Btn}>
           <BtnBlue value="HITUNG" />
         </View>
+        <View style={styles.showTagihan}>
+          <View>
+            <View style={styles.line} />
+            <View style={styles.tagihan}>
+              <Text style={styles.titleTagihan}>
+                Dana darurat yang dibutuhkan adalah:
+              </Text>
+              <Text style={styles.valueTagihan}>Rp 48.000.000</Text>
+            </View>
+          </View>
+          <BtnWhite value="EXPORT" />
+        </View>
       </View>
     );
   }
@@ -51,12 +63,38 @@ const styles = StyleSheet.create({
     marginBottom: '3%',
   },
 
-  textInput: {
-    paddingHorizontal: 16,
-    borderColor: '#d6d6d6',
+  showTagihan: {
+    marginVertical: '10%',
+    justifyContent: 'space-between',
+    height: '55%',
+  },
+
+  line: {
+    borderColor: '#DEDEDE',
+    width: '100%',
     borderWidth: 1,
+    marginBottom: '10%',
+  },
+
+  tagihan: {
+    borderWidth: 1,
+    borderColor: '#5782FC',
+    borderStyle: 'dashed',
+    paddingVertical: 23,
+    paddingHorizontal: 18,
     borderRadius: 5,
-    marginBottom: '3%',
+  },
+
+  titleTagihan: {
+    fontSize: 14,
+    color: '#333',
+  },
+
+  valueTagihan: {
+    fontWeight: 'bold',
+    fontSize: 14,
+    color: '#333',
+    paddingTop: 10,
   },
 });
 

@@ -4,24 +4,24 @@ import {Ibu} from '../../../assets/img';
 import DescTidakAdaTransaksi from '../DescTidakAdaTransaksi';
 import BtnBlue from '../BtnBlue';
 
-const EnableDesc = ({enable}) => {
+const EnableDesc = ({enable, onPress}) => {
   if (enable === true) {
     return <DescTidakAdaTransaksi />;
   } else {
     return (
-      <View style={{paddingTop: '15%'}}>
-        <BtnBlue value="TAMBAHKAN" />
+      <View style={{paddingTop: '15%', width: '100%'}}>
+        <BtnBlue value="TAMBAHKAN" onPress={onPress} />
       </View>
     );
   }
 };
 
-export default function TidakAdaTransaksi({descEnable}) {
+export default function TidakAdaTransaksi({descEnable, onPress}) {
   return (
     <View style={styles.layout}>
       <Ibu style={styles.ibu} />
       <Text style={styles.title}>Tidak ada Transaksi</Text>
-      <EnableDesc enable={descEnable} />
+      <EnableDesc enable={descEnable} onPress={onPress} />
     </View>
   );
 }

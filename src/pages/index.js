@@ -15,6 +15,8 @@ import Arisan from './Arisan';
 import Kategori from './Kategori';
 import Konsultasi from './Konsultasi';
 import DanaDarurat from './DanaDarurat';
+import TransaksiBerulang from './TransaksiBerulang';
+import TambahTransaksiBerulang from './TambahTransaksiBerulang';
 
 export {
   Splash,
@@ -34,4 +36,6 @@ export {
   Kategori,
   Konsultasi,
   DanaDarurat,
+  TransaksiBerulang,
+  TambahTransaksiBerulang,
 };

@@ -18,14 +18,14 @@ const Rencana = ({navigation}) => {
         warna="#F9A543"
         title="Transaksi Berulang"
         desc="Membuat transaksi yang secara otomatis ditambahkan di waktu yang akan datang"
-        onPress={() => navigation.navigate('Dana Darurat')}
+        onPress={() => navigation.navigate('Transaksi Berulang')}
       />
       <ItemRencana
         icon="tagihan"
         warna="#5A7FFF"
         title="Tagihan"
         desc="Memantau tagihan berulang anda seperti listrik, air, internet, dll"
-        onPress={() => navigation.navigate('Dana Darurat')}
+        onPress={() => alert('Coming Soon')}
       />
     </ScrollView>
   );
