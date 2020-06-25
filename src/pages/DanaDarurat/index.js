@@ -7,43 +7,50 @@ import {TextInput} from 'react-native-gesture-handler';
 import DropDownPicker from 'react-native-dropdown-picker';
 import {ArrowDown, ArrowUp} from '../../assets/img';
 
-class DanaDarurat extends Component {
-  render() {
-    return (
-      <View style={styles.layout}>
-        <FormInput title="Pengeluaran Bulanan" />
-        <View>
-          <Text style={styles.titleInput}>Status Keluarga</Text>
-          <DropDownPicker
-            items={[
-              {label: 'Memiliki Anak', value: 'item1', selected: true},
-              {label: 'Belum Memiliki Anak', value: 'item2'},
-            ]}
-            containerStyle={{height: 40}}
-            onChangeItem={item => console.log(item.label, item.value)}
-            customArrowDown={ArrowDown}
-            customArrowUp={ArrowUp}
-          />
-        </View>
-        <View style={styles.Btn}>
-          <BtnBlue value="HITUNG" />
-        </View>
-        <View style={styles.showTagihan}>
-          <View>
-            <View style={styles.line} />
-            <View style={styles.tagihan}>
-              <Text style={styles.titleTagihan}>
-                Dana darurat yang dibutuhkan adalah:
-              </Text>
-              <Text style={styles.valueTagihan}>Rp 48.000.000</Text>
-            </View>
-          </View>
-          <BtnWhite value="EXPORT" />
-        </View>
+const DanaDarurat = () => {
+  const [showTagihan, setShowTagihan] = useState('200%');
+
+  return (
+    <View style={styles.layout}>
+      <FormInput title="Pengeluaran Bulanan" />
+      <View>
+        <Text style={styles.titleInput}>Status Keluarga</Text>
+        <DropDownPicker
+          items={[
+            {label: 'Memiliki Anak', value: 'item1', selected: true},
+            {label: 'Belum Memiliki Anak', value: 'item2'},
+          ]}
+          containerStyle={{height: 40}}
+          onChangeItem={item => console.log(item.label, item.value)}
+          customArrowDown={ArrowDown}
+          customArrowUp={ArrowUp}
+        />
       </View>
-    );
-  }
-}
+      <View style={styles.Btn}>
+        <BtnBlue value="HITUNG" onPress={() => setShowTagihan(0)} />
+      </View>
+      {/*  */}
+      <View
+        style={{
+          marginVertical: '10%',
+          justifyContent: 'space-between',
+          height: '55%',
+          marginTop: showTagihan,
+        }}>
+        <View>
+          <View style={styles.line} />
+          <View style={styles.tagihan}>
+            <Text style={styles.titleTagihan}>
+              Dana darurat yang dibutuhkan adalah:
+            </Text>
+            <Text style={styles.valueTagihan}>Rp 48.000.000</Text>
+          </View>
+        </View>
+        <BtnWhite value="EXPORT" />
+      </View>
+    </View>
+  );
+};
 
 const styles = StyleSheet.create({
   layout: {
@@ -61,12 +68,6 @@ const styles = StyleSheet.create({
     color: '#333',
     fontWeight: 'bold',
     marginBottom: '3%',
-  },
-
-  showTagihan: {
-    marginVertical: '10%',
-    justifyContent: 'space-between',
-    height: '55%',
   },
 
   line: {
