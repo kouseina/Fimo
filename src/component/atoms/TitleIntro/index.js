@@ -1,15 +1,23 @@
 import React from 'react';
-import {Text} from 'react-native';
+import {Text, View, StyleSheet} from 'react-native';
 
 const TitleIntro = () => {
-  return <Text style={styles.title}>Keluarga Bahagia</Text>;
+  return (
+    <View style={styles.layout}>
+      <Text style={styles.title}>Keluarga Bahagia</Text>
+    </View>
+  );
 };
 
-const styles = {
+const styles = StyleSheet.create({
+  layout: {
+    marginTop: '7%',
+  },
+
   title: {
     fontWeight: 'bold',
     fontSize: 25,
   },
-};
+});
 
 export default TitleIntro;

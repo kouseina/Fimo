@@ -42,6 +42,11 @@ import ArrowDown from './arrow-down.svg';
 import ArrowUp from './arrow-up.svg';
 import Edit from './edit.svg';
 import Delete from './delete.svg';
+import IconProfileKonsultasi from './ic_konsultasi.svg';
+import Pengeluaran from './pengeluaran.svg';
+import Pendapatan from './pendapatan.svg';
+import Chart from './chart.svg';
+import AlatRumahTangga from './alat-rumah-tangga.svg';
 
 export {
   Line,
@@ -88,4 +93,9 @@ export {
   ArrowUp,
   Edit,
   Delete,
+  IconProfileKonsultasi,
+  Pengeluaran,
+  Pendapatan,
+  Chart,
+  AlatRumahTangga,
 };

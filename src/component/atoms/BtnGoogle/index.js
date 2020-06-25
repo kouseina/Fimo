@@ -22,7 +22,6 @@ const styles = StyleSheet.create({
     borderColor: '#DEDEDE',
     borderWidth: 2,
     flexDirection: 'row',
-    minWidth: 350,
   },
 
   Text: {
