@@ -47,6 +47,12 @@ import Pengeluaran from './pengeluaran.svg';
 import Pendapatan from './pendapatan.svg';
 import Chart from './chart.svg';
 import AlatRumahTangga from './alat-rumah-tangga.svg';
+import Anggaran from './anggaran.svg';
+import Star from './star.svg';
+import IconProfileKonsultasi2 from './ic_konsultasi_2.svg';
+import IconProfileKonsultasi3 from './ic_konsultasi_3.svg';
+import Pengingat from './pengingat.svg';
+import Selamat from './selamat.svg';
 
 export {
   Line,
@@ -98,4 +104,10 @@ export {
   Pendapatan,
   Chart,
   AlatRumahTangga,
+  Anggaran,
+  Star,
+  IconProfileKonsultasi2,
+  IconProfileKonsultasi3,
+  Pengingat,
+  Selamat,
 };

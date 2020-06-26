@@ -17,7 +17,8 @@ const DanaDarurat = () => {
         <Text style={styles.titleInput}>Status Keluarga</Text>
         <DropDownPicker
           items={[
-            {label: 'Memiliki Anak', value: 'item1', selected: true},
+            {label: 'Memiliki Anak 1', value: 'item1', selected: true},
+            {label: 'Memiliki Anak 2', value: 'item1'},
             {label: 'Belum Memiliki Anak', value: 'item2'},
           ]}
           containerStyle={{height: 40}}

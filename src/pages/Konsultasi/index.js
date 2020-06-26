@@ -1,6 +1,11 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
-import {IconProfileKonsultasi} from '../../assets/img';
+import {
+  IconProfileKonsultasi,
+  Star,
+  IconProfileKonsultasi2,
+  IconProfileKonsultasi3,
+} from '../../assets/img';
 
 export default function Konsultasi() {
   return (
@@ -8,9 +13,31 @@ export default function Konsultasi() {
       <View style={styles.wrapper}>
         <IconProfileKonsultasi />
         <View style={styles.text}>
-          <Text style={styles.title}>Tips Atur Uang</Text>
-          <Text style={styles.tanggal}>Berikutnya: Senin 22/06/2020</Text>
-          <Text style={styles.harga}>Rp 50.000</Text>
+          <Text style={styles.title}>Sri Maharani</Text>
+          <Text style={styles.tanggal}>Perencanaan Keuangan</Text>
+          <View style={{paddingTop: '5%'}}>
+            <Star />
+          </View>
+        </View>
+      </View>
+      <View style={styles.wrapper}>
+        <IconProfileKonsultasi2 />
+        <View style={styles.text}>
+          <Text style={styles.title}>Hidayati</Text>
+          <Text style={styles.tanggal}>Perencanaan Keuangan</Text>
+          <View style={{paddingTop: '5%'}}>
+            <Star />
+          </View>
+        </View>
+      </View>
+      <View style={styles.wrapper}>
+        <IconProfileKonsultasi3 />
+        <View style={styles.text}>
+          <Text style={styles.title}>Dwi</Text>
+          <Text style={styles.tanggal}>Perencanaan Keuangan</Text>
+          <View style={{paddingTop: '5%'}}>
+            <Star />
+          </View>
         </View>
       </View>
     </View>
@@ -29,6 +56,7 @@ const styles = StyleSheet.create({
     padding: '4%',
     flexDirection: 'row',
     alignItems: 'center',
+    marginBottom: '5%',
   },
 
   text: {
@@ -44,12 +72,5 @@ const styles = StyleSheet.create({
   tanggal: {
     fontSize: 12,
     color: '#777',
-  },
-
-  harga: {
-    fontWeight: 'bold',
-    fontSize: 14,
-    color: '#333',
-    paddingTop: '4%',
   },
 });

@@ -9,7 +9,7 @@ const TransaksiBahanMakanan = () => {
       <BahanMakanan />
       <View style={styles.text}>
         <Text style={styles.title}>Bahan Makanan</Text>
-        <Text style={styles.tanggal}>Berikutnya: Senin 22/06/2020</Text>
+        <Text style={styles.tanggal}>Berikutnya: Jumat 26/06/2020</Text>
         <Text style={styles.harga}>Rp 50.000</Text>
       </View>
       <Edit />
@@ -41,7 +41,6 @@ export default function TransaksiBerulang({navigation}) {
         onPress={() => navigation.navigate('Tambah Transaksi Berulang')}
       />
       <TransaksiBahanMakanan />
-      <TransaksiSPPSekolah />
     </View>
   );
 }
