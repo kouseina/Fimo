@@ -15,6 +15,17 @@ const TambahTransaksi = ({navigation}) => {
   const [isPengingatVisible, setPengingatVisible] = useState(false);
   const [isSelamatVisible, setSelamatVisible] = useState(false);
 
+  const [showColorKategori, setShowColorKategori] = useState('#adadad');
+
+  const handleGo = () => {
+    navigation.navigate('Kategori');
+  };
+
+  const multipleKategori = () => {
+    handleGo();
+    setShowColorKategori('#333');
+  };
+
   const toggleAnggaran = () => {
     setAnggaranVisible(!isAnggaranVisible);
   };
@@ -36,8 +47,10 @@ const TambahTransaksi = ({navigation}) => {
         <Text style={styles.titleInput}>Kategori</Text>
         <TouchableOpacity
           style={styles.textInput}
-          onPress={() => navigation.navigate('Kategori')}>
-          <Text style={styles.text}>Pakaian</Text>
+          onPress={() => multipleKategori()}>
+          <Text style={{color: showColorKategori, fontWeight: 'bold'}}>
+            Pakaian
+          </Text>
           <ArrowRight />
         </TouchableOpacity>
       </View>
