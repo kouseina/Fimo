@@ -89,7 +89,18 @@ const TambahTransaksi = ({navigation}) => {
             />
           </View>
 
-          <Button title="SELANJUTNYA" onPress={togglePengingat} />
+          <TouchableOpacity
+            style={{
+              paddingVertical: '3%',
+              backgroundColor: '#5782FC',
+              borderBottomEndRadius: 5,
+            }}>
+            <Button
+              title="SELANJUTNYA"
+              color="#5782FC"
+              onPress={togglePengingat}
+            />
+          </TouchableOpacity>
         </View>
       </Modal>
       <Modal isVisible={isPengingatVisible}>
@@ -109,7 +120,18 @@ const TambahTransaksi = ({navigation}) => {
             <Pengingat />
           </View>
 
-          <Button title="SELANJUTNYA" onPress={toggleSelamat} />
+          <TouchableOpacity
+            style={{
+              paddingVertical: '3%',
+              backgroundColor: '#5782FC',
+              borderBottomEndRadius: 5,
+            }}>
+            <Button
+              title="SELANJUTNYA"
+              color="#5782FC"
+              onPress={toggleSelamat}
+            />
+          </TouchableOpacity>
         </View>
       </Modal>
       <Modal isVisible={isSelamatVisible}>
@@ -129,7 +151,18 @@ const TambahTransaksi = ({navigation}) => {
             <Selamat />
           </View>
 
-          <Button title="SELANJUTNYA" onPress={() => navigation.goBack()} />
+          <TouchableOpacity
+            style={{
+              paddingVertical: '3%',
+              backgroundColor: '#5782FC',
+              borderBottomEndRadius: 5,
+            }}>
+            <Button
+              title="SELANJUTNYA"
+              color="#5782FC"
+              onPress={() => navigation.goBack()}
+            />
+          </TouchableOpacity>
         </View>
       </Modal>
     </ScrollView>
